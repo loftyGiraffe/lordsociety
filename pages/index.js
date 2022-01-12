@@ -151,7 +151,7 @@ export default function Home() {
                     max="10"
                     type="number"
                 />
-                <div style={{ color: "white", fontSize: "30px", fontWeight: '500', }}>Prime Ape(s)</div>
+                <div style={{ color: "white", fontSize: "30px", fontWeight: '500', }}>Lord(s)</div>
             </div>
             <button
                 onClick={() => {
